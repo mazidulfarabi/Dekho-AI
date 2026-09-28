@@ -423,7 +423,7 @@ async function loadVisionTasks() {
 
 async function loadObjectDetector(vision) {
     setLoaderMessage("Loading object detection model…");
-    setStatus("Loading object detection model (30–60 seconds on first load)...");
+    setStatus("Loading object detection model...");
 
     return withTimeout(
         ObjectDetector.createFromOptions(vision, {
